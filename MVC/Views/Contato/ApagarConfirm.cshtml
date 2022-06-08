@@ -1,0 +1,15 @@
+﻿@using MVC.Repositories.Models
+@model ContatoModel
+@{
+    ViewData["Title"] = "Excluir Contato";
+}
+
+<div class="text-center">
+    <h5>Realmente deseja excluir o contato (@Model.Nome)</h5>
+
+    <a class="btn btn-success" role="button" asp-controller="Contato" asp-action="Apagar" asp-route-id="@Model.Id">SIM</a>
+    <a class="btn btn-danger" role="button" asp-controller="Contato" asp-action="Index">NÃO</a>
+</div>
+
+
+
